@@ -22,6 +22,8 @@ RUN --mount=type=cache,target=/var/cache/apt \
         python3-venv \
         python3-opencv \
         python3-pil \
+        python3-wheel \
+        python3-setuptools \
         git \
         curl \
         ca-certificates \
@@ -37,7 +39,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
 # Python packages for API mode with image processing
 
 RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install --break-system-packages --upgrade pip wheel setuptools
+    pip install --break-system-packages --upgrade pip
 
 # Essential dependencies including image processing
 COPY builder-scripts/.  /builder-scripts/
