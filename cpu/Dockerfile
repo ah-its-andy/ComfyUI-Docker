@@ -38,9 +38,6 @@ RUN --mount=type=cache,target=/var/cache/apt \
 ################################################################################
 # Python packages for API mode with image processing
 
-RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install --break-system-packages --upgrade pip
-
 # Essential dependencies including image processing
 COPY builder-scripts/.  /builder-scripts/
 
