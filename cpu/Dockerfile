@@ -24,6 +24,11 @@ RUN --mount=type=cache,target=/var/cache/apt \
         python3-pil \
         python3-wheel \
         python3-setuptools \
+        python3-aiohttp \
+        python3-numpy \
+        python3-requests \
+        python3-yaml \
+        python3-tqdm \
         git \
         curl \
         ca-certificates \
@@ -43,13 +48,6 @@ COPY builder-scripts/.  /builder-scripts/
 
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install --break-system-packages \
-        aiohttp \
-        pillow \
-        opencv-python-headless \
-        numpy \
-        requests \
-        pyyaml \
-        tqdm \
         safetensors \
         imageio \
         imageio-ffmpeg \
