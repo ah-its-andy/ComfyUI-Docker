@@ -76,16 +76,3 @@ gcs https://github.com/cubiq/ComfyUI_InstantID.git
 gcs https://github.com/cubiq/ComfyUI_IPAdapter_plus.git
 gcs https://github.com/cubiq/PuLID_ComfyUI.git
 gcs https://github.com/cubiq/ComfyUI_FaceAnalysis.git
-
-
-echo "########################################"
-echo "[INFO] Downloading Models..."
-echo "########################################"
-
-# VAE Models
-cd /default-comfyui-bundle/ComfyUI/models/vae
-
-aria2c 'https://github.com/madebyollin/taesd/raw/refs/heads/main/taesdxl_decoder.pth'
-aria2c 'https://github.com/madebyollin/taesd/raw/refs/heads/main/taesd_decoder.pth'
-aria2c 'https://github.com/madebyollin/taesd/raw/refs/heads/main/taesd3_decoder.pth'
-aria2c 'https://github.com/madebyollin/taesd/raw/refs/heads/main/taef1_decoder.pth'

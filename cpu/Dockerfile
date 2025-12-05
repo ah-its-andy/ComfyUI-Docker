@@ -58,7 +58,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 
 WORKDIR /default-comfyui-bundle
 
-RUN bash /builder-scripts/preload-cache.sh
+RUN bash /builder-scripts/preload-cache-minimal.sh
 
 # Install ComfyUI-Openrouter_node
 RUN cd /default-comfyui-bundle/ComfyUI/custom_nodes \
