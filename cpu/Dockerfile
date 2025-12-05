@@ -26,7 +26,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
         curl \
         ca-certificates \
         ffmpeg \
-        libgl1-mesa-glx \
+        libgl1 \
         libglib2.0-0 \
         fonts-noto-core \
         fonts-noto-cjk \
